@@ -15,3 +15,8 @@ ignore_files = []									# Regexps for ignoring specific notifies
 build_delay = 1500									# Minimal interval to Trigger build event
 interrupt_timout = 15								# Time to wait until force kill
 graceful_kill = false								# Wait for exit and before directly kill
+
+cmds = [
+	["go", "build", "-o", "petersays.io"],
+	["./petersays.io"]
+]
